@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-23T15:24:16 IST" name="Default suite" finished-at="2025-02-23T15:24:32 IST" duration-ms="15393">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@604f2bd2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-02-23T15:24:16 IST" name="Default test" finished-at="2025-02-23T15:24:32 IST" duration-ms="15393">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@604f2bd2]" started-at="2025-02-23T15:24:16 IST" name="setUpClass" finished-at="2025-02-23T15:24:18 IST" duration-ms="1376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@63eea8c4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@604f2bd2]" started-at="2025-02-23T15:24:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-23T15:24:26 IST" duration-ms="7887" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login successfully with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login page feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Just a moment...] but found [Product tags / nopCommerce administration hvnmv]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Just a moment...] but found [Product tags / nopCommerce administration hvnmv]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at stepdefinitions.LoginStepsDefinition.page_title_should_be(LoginStepsDefinition.java:36)
+at ✽.page title should be "Product tags / nopCommerce administration hvnmv"(file:///C:/Users/DELL/eclipse-workspace/NopCommerseAutomationProject/./src/test/resources/features/Login.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@604f2bd2]" started-at="2025-02-23T15:24:26 IST" name="tearDownClass" finished-at="2025-02-23T15:24:32 IST" duration-ms="6059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
